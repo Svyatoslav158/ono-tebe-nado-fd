@@ -1,1 +1,380 @@
-/* место для вашего кода */
+.header {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+ 
+
+.nav
+{
+    display: flex;
+    gap: 25px;
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+}
+
+.logo 
+{
+ Width: 129.11px;
+Height: 104.65px;
+margin-top: 93.16;
+margin-left: 487.03;
+
+}
+
+
+.menu {
+    display: flex;
+    gap: 10px;
+    list-style-type:none;
+    margin-top: 133;
+    margin-left: 50;
+    font-family: Raleway;
+  font-size: 18 px;
+  font-weight: 400; 
+  }
+  
+  .menu__item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+  
+  .menu__item:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+  }
+  
+  .menu__item_active:before {
+    display: none;  
+  }
+
+.adress {
+  display: block;
+  font-family: Raleway;
+  font-size: 18 px;
+  font-weight: 400; 
+}
+/* ГЛАВНАЯ КАРТИНКА*/
+
+.main_image
+{
+  margin-top: 138px;
+    background-image: url(file:///D:/project/ono-tebe-nado-fd/images/cover.jpg);
+    background-size: cover;
+    height: 757px;
+    width: 1100px;
+    margin-bottom: 100px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+}
+.main_image:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);}
+
+
+.text_main_zero {
+padding-top: 165px;
+margin-left: 50px;
+font-family: Raleway;
+font-weight: 700; 
+line-height: 115px;
+  font-size: 100px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+}
+.text_main_one {
+  margin-top: 20px;
+  margin-left: 380.5px;
+  font-family: Raleway;
+  font-weight: 700; 
+line-height: 115px;
+  font-size: 100px;
+  color: aliceblue;
+  position: relative;
+  z-index: 2;
+}
+
+.text_main_two{
+  font-family: Raleway;
+    margin-top: 20px;
+    margin-left: 663px;
+  font-size: 100px;
+  font-weight: 700; 
+line-height: 115px;
+  color: aliceblue;
+  position: relative;
+  z-index: 2;
+}
+
+
+.text_d {
+  margin-left: 50px;
+  font-family: Raleway;
+  font-size: 22 px;
+  font-weight: 400; 
+line-height: 28px;
+text-transform: uppercase;
+word-spacing: 22px;
+    display: flex;
+    color: aliceblue;
+    margin-top: 106px;
+    position: relative;
+    z-index: 2;
+}
+
+.button {
+  margin-left: 140px;
+  font-family: Raleway;
+  font-weight: 500; 
+  font-size: 22 px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+
+}
+/* БЛОК С КАРТОЧКАМИ */
+
+
+
+
+
+.cards{
+  margin-top: 27px;
+    display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100%;
+    margin-bottom: 20px;
+    gap: 24px;
+    position: relative;
+}
+
+.lot {
+  position: relative;
+  overflow: hidden;
+}
+
+.lot:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);} 
+
+.card_one {
+    background-image: url(file:///D:/project/ono-tebe-nado-fd/images/card-lot-01.jpg);
+    width: 334px;
+    height: 596px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card_second {   background-image: url(file:///D:/project/ono-tebe-nado-fd/images/card-lot-02.jpg);
+    width: 334px;
+    height: 596px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.card_third {   
+    background-image: url(file:///D:/project/ono-tebe-nado-fd/images/card-lot-03.jpg);
+    width: 334px;
+    height: 596px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card_text_glov{
+
+  font-family: Raleway;
+  font-size: 22 px;
+  font-weight: 700; 
+text-transform: uppercase;
+color:#FFFFFF;
+    position: relative;
+    z-index: 2;
+}
+.lot_text{
+  margin-top: 48px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+.card_text_one{
+  margin-left: 40px;
+  margin-top: 274px;
+  margin-right: 40px ;
+  font-family: Raleway;
+  font-size: 22 px;
+  font-weight: 400; 
+color:#FFFFFF;
+    position: relative;
+    z-index: 2;
+
+}
+.card_text_second{
+  margin: 30px 40px 48px 40px;
+  font-family: Raleway;
+  font-size: 22 px;
+  font-weight: 400; 
+color:#FFFFFF;
+    position: relative;
+    z-index: 2;
+
+}
+.card_text_thri{
+  margin: 126px 40px 48px 40px;
+ 
+  font-family: Raleway;
+  font-size: 20 px;
+  font-weight: 400; 
+color:#FFFFFF;
+    position: relative;
+    z-index: 2;
+
+}
+
+.more {
+margin-left: 64px;
+  font-family: Raleway;
+  font-size: 20 px;
+}
+
+/* БЛОК С ЛОГО И ТЕКСТОМ */
+
+.content {
+  margin-top: 100px;
+  display: flex;
+  gap: 60px;
+  flex-wrap: nowrap;
+  width: 100%;
+ 
+  
+}
+
+.logo_container {
+  margin-top: 155px;
+  margin-left: 47px;
+  height: 250px;
+  width: 250px;
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+.logo_second_img {
+width: 148px;
+height: 114px;
+}
+
+
+.text_bold {
+  margin-top: 256px;
+  margin-left: 72px;
+ display: inline-block;
+  font-size: 50px;
+  font-family: Raleway;
+  font-size: 40 px;
+  font-weight: 700; 
+  text-transform: uppercase;
+ 
+}
+
+.block_one{
+  margin-top: 100px;
+
+  display: inline-block;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400; 
+}
+.block_two {
+  display: inline-block;
+  margin-top: 20px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400; 
+}
+
+.colum_text {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-direction: column;
+  
+}
+
+
+  /* ПОДВАЛ */
+
+.footer {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+    gap: 24px;
+}
+
+.info{
+  margin-top: 180px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-direction: column;
+  font-family: Raleway;
+  font-size: 18 px;
+  font-weight: 400; 
+}
+.menu_two{
+  margin-top: 180px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  font-family: Raleway;
+  font-size: 18 px;
+  font-weight: 400; 
+}
+.social {
+  margin-top: 180px;
+  width: 48px;
+  height: 48px;
+}
