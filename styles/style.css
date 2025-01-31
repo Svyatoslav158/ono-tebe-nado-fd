@@ -1,81 +1,95 @@
-.header {
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
+.header__menu {
+  width: 100%;
+  margin: 0 auto;
 }
- 
 
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 95.19px;
+}
+
+ 
 .nav
 {
-    display: flex;
-    gap: 25px;
-    list-style-type: circle;
-    padding: 0;
-    margin: 0;
-}
-
-.logo 
-{
- Width: 129.11px;
-Height: 104.65px;
-margin-top: 93.16;
-margin-left: 487.03;
-
+  display: flex;
+  gap: 6px;
+  list-style-type: circle;
+  padding: 0;
+  margin: 0;
 }
 
 
-.menu {
-    display: flex;
-    gap: 10px;
-    list-style-type:none;
-    margin-top: 133;
-    margin-left: 50;
-    font-family: Raleway;
-  font-size: 18 px;
-  font-weight: 400; 
-  }
-  
-  .menu__item {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-  }
-  
-  .menu__item:before {
-    content: '';
-    display: block;
-    width: 5px;
-    height: 5px;
-    border: 1px solid;
-    border-radius: 50%;
-  }
-  
-  .menu__item_active:before {
-    display: none;  
-  }
+.header__logo{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 129.11px;
+  height: 104.65px;
+  margin: 0 auto; 
+}
 
-.adress {
-  display: block;
+
+.header__links-list {
+  display: flex;
+  gap: 10px;
+  list-style-type:none;
   font-family: Raleway;
-  font-size: 18 px;
+  font-size: 18px;
   font-weight: 400; 
+  }
+  
+
+.header__links-list-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  }
+
+
+.header__links-list-item:before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid;
+  border-radius: 50%;
+  }
+
+
+.header__links-list-item_no-bullit:before {
+  display: none;  
+  }
+
+.address {
+  display: block;
+  font-style: inherit;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 184px; 
 }
+
+
+
 /* ГЛАВНАЯ КАРТИНКА*/
 
-.main_image
-{
-  margin-top: 138px;
-    background-image: url(file:///D:/project/ono-tebe-nado-fd/images/cover.jpg);
-    background-size: cover;
-    height: 757px;
-    width: 1100px;
-    margin-bottom: 100px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    
+.cover {
+  margin-top: 96px;
+  background-image: url(file:///D:/project/ono-tebe-nado-fd/images/cover.jpg);
+  background-size: cover;
+  height: 757px;
+  width: 1100px;
+  margin-bottom: 100px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
-.main_image:before {
+
+
+.cover:before {
 	content: '';
 	display: block;
 	width: 100%;
@@ -88,91 +102,110 @@ margin-left: 487.03;
 	background-color:rgba(0, 0, 0, .5);}
 
 
-.text_main_zero {
-padding-top: 165px;
-margin-left: 50px;
-font-family: Raleway;
-font-weight: 700; 
-line-height: 115px;
+.aligned-text {
+  padding-top: 165px;
+  margin-left: 50px;
+  font-family: Raleway;
+  font-weight: 700; 
+  line-height: 115px;
+  letter-spacing: 32px;
   font-size: 100px;
   color: #FFFFFF;
   position: relative;
   z-index: 2;
 }
-.text_main_one {
+
+
+.aligned-text_center {
   margin-top: 20px;
   margin-left: 380.5px;
   font-family: Raleway;
   font-weight: 700; 
-line-height: 115px;
+  line-height: 115px;
   font-size: 100px;
+  letter-spacing: 32px;
   color: aliceblue;
   position: relative;
   z-index: 2;
 }
 
-.text_main_two{
+
+.aligned-text_right{
   font-family: Raleway;
-    margin-top: 20px;
-    margin-left: 663px;
+  margin-top: 20px;
+  margin-left: 663px;
   font-size: 100px;
   font-weight: 700; 
-line-height: 115px;
+  line-height: 115px;
+  letter-spacing: 32px;
   color: aliceblue;
   position: relative;
   z-index: 2;
 }
 
 
-.text_d {
+.cover__description {
   margin-left: 50px;
-  font-family: Raleway;
-  font-size: 22 px;
-  font-weight: 400; 
-line-height: 28px;
-text-transform: uppercase;
-word-spacing: 22px;
-    display: flex;
-    color: aliceblue;
-    margin-top: 106px;
-    position: relative;
-    z-index: 2;
+  display: flex;
+  color: aliceblue;
+  position: relative;
+  margin-top: 118px;
+  z-index: 2;
 }
 
-.button {
-  margin-left: 140px;
+.cover__description-text{
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400; 
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 22px;
+}
+
+
+.bet-button {
+  margin-left: 107px;
   font-family: Raleway;
   font-weight: 500; 
-  font-size: 22 px;
+  font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
-
+  padding: 12px 32px 11px 31px;
 }
+
+
 /* БЛОК С КАРТОЧКАМИ */
 
+.lots__heading {
+  font-family: Raleway;
+  font-weight: 700; 
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-left: 64px;
+  margin-top: 180px;
+}
 
-
-
-
-.cards{
+.lots{
   margin-top: 27px;
-    display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   min-width: 850px;
   min-height: 100%;
-    margin-bottom: 20px;
-    gap: 24px;
-    position: relative;
+  margin-bottom: 20px;
+  gap: 24px;
+  position: relative;
 }
+
 
 .lot {
   position: relative;
   overflow: hidden;
 }
+
 
 .lot:before {
 	content: '';
@@ -186,102 +219,104 @@ word-spacing: 22px;
 	bottom: 0;
 	background-color:rgba(0, 0, 0, .5);} 
 
-.card_one {
-    background-image: url(file:///D:/project/ono-tebe-nado-fd/images/card-lot-01.jpg);
-    width: 334px;
-    height: 596px;
-    background-size: cover;
-    background-position: center;
+
+.card_type_film  {
+  background-image: url(file:///D:/project/ono-tebe-nado-fd/images/card-lot-01.jpg);
+  width: 334px;
+  height: 596px;
+  background-size: cover;
+  background-position: center;
 }
 
 
-.card_second {   background-image: url(file:///D:/project/ono-tebe-nado-fd/images/card-lot-02.jpg);
-    width: 334px;
-    height: 596px;
-    background-size: cover;
-    background-position: center;
+.card_type_book {   
+  background-image: url(file:///D:/project/ono-tebe-nado-fd/images/card-lot-02.jpg);
+  width: 334px;
+  height: 596px;
+  background-size: cover;
+  background-position: center;
 }
 
 
-
-
-.card_third {   
-    background-image: url(file:///D:/project/ono-tebe-nado-fd/images/card-lot-03.jpg);
-    width: 334px;
-    height: 596px;
-    background-size: cover;
-    background-position: center;
+.card_type_picture {   
+  background-image: url(file:///D:/project/ono-tebe-nado-fd/images/card-lot-03.jpg);
+  width: 334px;
+  height: 596px;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_text_glov{
-
   font-family: Raleway;
-  font-size: 22 px;
+  font-size: 22px;
   font-weight: 700; 
-text-transform: uppercase;
-color:#FFFFFF;
-    position: relative;
-    z-index: 2;
+  text-transform: uppercase;
+  color:#FFFFFF;
+  position: relative;
+  z-index: 2;
 }
+
+
 .lot_text{
   margin-top: 48px;
   margin-left: 40px;
   margin-right: 40px;
-
 }
+
+
 .card_text_one{
   margin-left: 40px;
   margin-top: 274px;
   margin-right: 40px ;
   font-family: Raleway;
-  font-size: 22 px;
+  font-size: 20px;
   font-weight: 400; 
-color:#FFFFFF;
-    position: relative;
-    z-index: 2;
-
+  color:#FFFFFF;
+  position: relative;
+  z-index: 2;
 }
+
+
 .card_text_second{
   margin: 30px 40px 48px 40px;
   font-family: Raleway;
-  font-size: 22 px;
+  font-size: 20px;
   font-weight: 400; 
-color:#FFFFFF;
-    position: relative;
-    z-index: 2;
-
+  color:#FFFFFF;
+  position: relative;
+  z-index: 2;
 }
+
+
 .card_text_thri{
   margin: 126px 40px 48px 40px;
- 
   font-family: Raleway;
-  font-size: 20 px;
+  font-size: 20px;
   font-weight: 400; 
-color:#FFFFFF;
-    position: relative;
-    z-index: 2;
-
+  color:#FFFFFF;
+  position: relative;
+  z-index: 2;
 }
 
+
 .more {
-margin-left: 64px;
+  margin-left: 64px;
   font-family: Raleway;
-  font-size: 20 px;
+  font-size: 20px;
 }
 
 /* БЛОК С ЛОГО И ТЕКСТОМ */
 
-.content {
+.about {
   margin-top: 100px;
   display: flex;
   gap: 60px;
   flex-wrap: nowrap;
   width: 100%;
- 
-  
+
 }
 
-.logo_container {
+.about__logo {
   margin-top: 155px;
   margin-left: 47px;
   height: 250px;
@@ -292,36 +327,35 @@ margin-left: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 
-.logo_second_img {
-width: 148px;
-height: 114px;
+.about__logo-image {
+  width: 148px;
+  height: 114px;
 }
 
 
-.text_bold {
+.about__title{
   margin-top: 256px;
   margin-left: 72px;
- display: inline-block;
+  display: inline-block;
   font-size: 50px;
   font-family: Raleway;
-  font-size: 40 px;
+  font-size: 40px;
   font-weight: 700; 
   text-transform: uppercase;
- 
 }
 
 .block_one{
   margin-top: 100px;
-
   display: inline-block;
   font-family: Raleway;
   font-size: 20px;
   font-weight: 400; 
 }
+
+
 .block_two {
   display: inline-block;
   margin-top: 20px;
@@ -336,7 +370,6 @@ height: 114px;
   flex-wrap: nowrap;
   width: 100%;
   flex-direction: column;
-  
 }
 
 
@@ -347,34 +380,37 @@ height: 114px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-
-    gap: 24px;
+  
 }
 
+
 .info{
-  margin-top: 180px;
+  margin-bottom: 82px;
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
   flex-direction: column;
   font-family: Raleway;
-  font-size: 18 px;
+  font-size: 18px;
   font-weight: 400; 
 }
-.menu_two{
-  margin-top: 180px;
+
+
+.footer__menu{
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
   width: 100%;
   flex-direction: column;
   font-family: Raleway;
-  font-size: 18 px;
+  font-size: 18px;
   font-weight: 400; 
 }
-.social {
-  margin-top: 180px;
+
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
   width: 48px;
   height: 48px;
+  gap: 48px;
 }
