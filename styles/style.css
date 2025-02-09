@@ -167,8 +167,8 @@
   gap: 24px;
 }
 
-.card-link {
-  display: block;
+.card_link {
+  text-decoration: none;
 }
 
 .card_type_film,
