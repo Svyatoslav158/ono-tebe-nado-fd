@@ -171,9 +171,7 @@
   text-decoration: none;
 }
 
-.card_type_film,
-.card_type_book,
-.card_type_picture {
+.card {
   position: relative;
   width: 334px;
   min-height: 596px;
@@ -285,9 +283,6 @@
   padding: 0 50px 80px;
 }
 
-.address_footer {
-  white-space: nowrap;
-}
 .footer__menu {
   display: flex;
   align-items: center;
